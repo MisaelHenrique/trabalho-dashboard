@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="../CSS/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="../JS/charts.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/chart.js"></script>
     <title>Document</title>
 </head>
 
@@ -23,7 +22,6 @@
                 <i class="bx bxl-nodejs"></i>
                 <h3>Corporation</h3>
             </div>
-
             <div class="item1">
                 <div class="h2">
                     <h2>TS</h2>
@@ -116,19 +114,16 @@
                 </div>
             </div>
         </div>
-
         <div class="content">
             <div class="header">
                 <div class="header-text">
                     <div class="h3">
                         <h3>Hello Tony</h3>
                     </div>
-
                     <div class="span">
                         <span>Premium</span>
                     </div>
                 </div>
-
                 <div class="header-input">
                     <div class="icon-search">
                         <i class="bx bx-search-alt-2"></i>
@@ -138,8 +133,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="box1">
+            <div class="box box1">
                 <div class="img">
                     <img src="../IMG/Stark icon.jpeg" alt="Stark icon" />
                 </div>
@@ -179,66 +173,94 @@
                 </div>
             </div>
             <div class="box box4">
-                <div class="grafico">
-                    <canvas id="myChart"></canvas>
-                </div>
+                <canvas id="myChart"></canvas>
                 <script>
-                    const ctx = document.getElementById('myChart').getContext('2d')
-                    const myChart = new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                            labels: ['Dec', 'Jan', 'Fev', 'Mar', 'Apr', 'May', 'Jun'],
-                            datasets: [{
-                                label: '# of Cotas',
-                                data: [56, 32, 25, 87, 66, 1, 75],
-                                borderColor: ['rgba(5, 0, 145, 1)'],
-                                borderWidth: 1.5,
-                                tension: 0.5,
-                            }, {
-                                label: '# of Votes',
-                                data: [25, 23, 52, 11, 55, 8, 56],
-
-                                borderColor: ['rgba(255, 159, 64, 1)'],
-                                borderWidth: 1.5,
-                                tension: 0.5,
-                            }, ],
-                        },
-                    })
+                    const myChart = new Chart(
+                        document.getElementById('myChart'),
+                        config,
+                    )
                 </script>
             </div>
             <div class="box box5">
-                <h4>Top coutries</h4>
-                <h6>favorites</h6>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="../IMG/BELGICA.png" alt="" /> Belgium
-                        </td>
-                        <td>7.5K</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../IMG/FRANCA.png" alt="" /> France
-                        </td>
-                        <td>5.8K</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../IMG/USA.png" alt="" /> USA
-                        </td>
-                        <td>4.9K</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../IMG/GERMANY.png" alt="" /> Germany
-                        </td>
-                        <td>4.8K</td>
-                    </tr>
-                </table>
-                <h6 class="view">View all ></h6>
+                <div class="title">
+                    <h4>Top Countries</h4>
+                    <h6>Favorites</h6>
+                </div>
+                <div class="center">
+                    <div class="flag">
+                        <img src="../IMG/GERMANY.png" alt="bandeira Alemanha" />
+                        <img src="../IMG/brasil.jpeg" alt="bandeira Brasil" />
+                        <img src="../IMG/USA.png" alt="bandeira EUA" />
+                        <img src="../IMG/holanda.jpeg" alt="bandeira Holanda" />
+                    </div>
+                    <div class="info">
+                        <div class="names">
+                            <h6>Germany</h6>
+                            <h6>Brazil</h6>
+                            <h6>USA</h6>
+                            <h6>Netherlands</h6>
+                        </div>
+                        <div class="number">
+                            <h6>7.5K</h6>
+                            <h6>8.2K</h6>
+                            <h6>7.1K</h6>
+                            <h6>8.0K</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="view">
+                        <span>View All</span>
+                        <i class="bx bx-chevron-right"></i>
+                    </div>
+                </div>
             </div>
-            <div class="box box6"></div>
-            <div class="box box7"></div>
+            <div class="box box6">
+                <div class="title">
+                    <h4>Segmentations</h4>
+                    <h6>All Users</h6>
+                </div>
+                <div class="center">
+                    <div class="list">
+                        <ul>
+                            <li>Not Specified</li>
+                            <li>Male</li>
+                            <li>Female</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <div class="bar4"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <span>Details</span>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+            </div>
+            <div class="box box7">
+                <div class="title">
+                    <h4>Satisfaction Rate</h4>
+                    <h6>From All Pages</h6>
+                </div>
+                <div class="center">
+                    <div class="progress">
+                        <div class="barOverflow">
+                            <div class="bar"></div>
+                        </div>
+                        <span>89.87%</span>
+                        <h6>Based on likes</h6>
+                    </div>
+                </div>
+                <div class="footer">
+                    <span>Details</span>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+            </div>
             <div class="box box8">
                 <div class="btn1">
                     <i class="bx bx-plus"></i>
