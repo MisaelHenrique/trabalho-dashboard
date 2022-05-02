@@ -13,10 +13,12 @@ const data = {
 
         {
             label: "Previous",
+            radius: 0.5,
             backgroundColor: "rgb(246, 232, 163)",
             borderColor: "rgb(246, 232, 163)",
             data: [23, 25, 27, 24, 32, 26, 35],
             tension: 0.5,
+            animation: true,
         },
     ],
 };
