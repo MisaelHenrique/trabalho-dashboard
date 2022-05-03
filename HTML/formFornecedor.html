@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/chart.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols";
+                [{
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                }, {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "US 100"
+                }, {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                }, {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "Bitcoin"
+                }, {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "Ethereum"
+                }],
+                "showSymbolLogo";
+                true,
+                "colorTheme";
+                "light",
+                "isTransparent";
+                false,
+                "displayMode";
+                "adaptive",
+                "locale";
+                "br"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <i class="bx bxl-nodejs"></i>
+                <h3>Corporation</h3>
+            </div>
+            <div class="item1">
+                <div class="h2">
+                    <h2>TS</h2>
+                </div>
+                <div class="txt">
+                    <h4>Dlex Designs</h4>
+                    <h6>General Team</h6>
+                </div>
+                <div class="icon">
+                    <i class="bx bx-expand-vertical"></i>
+                </div>
+            </div>
+            <div class="item2">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-bar-chart-square"></i>
+                                <span>Overview</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-conversation"></i>
+                                <span>Chat</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-group"></i>
+                                <span>Team</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h5>Cadastros</h5>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bx bx-detail"></i>
+                                <span>Usuários</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bx bx-error"></i>
+                                <span>Produtos</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bx bxs-cog"></i>
+                                <span>Fornecedores</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="item3">
+                <div class="txt1">
+                    <span id="strong">Storage</span>
+                    <span id="standard">Upgrade</span>
+                </div>
+                <div class="txt2">
+                    <span id="strong">3.4 GB</span>
+                    <span id="standard">of 15 GB</span>
+                </div>
+            </div>
+            <div class="item4">
+                <div class="img">
+                    <img src="../IMG/Stark icon.jpeg" alt="Stark icon" />
+                </div>
+                <div class="txt">
+                    <h4>Tony Stark</h4>
+                </div>
+                <div class="icon">
+                    <i class="bx bx-expand-vertical"></i>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="header-text">
+                    <div class="h3">
+                        <h3>Hello Tony</h3>
+                    </div>
+                    <div class="span">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="header-input">
+                    <div class="icon-search">
+                        <i class="bx bx-search-alt-2"></i>
+                    </div>
+                    <div class="input">
+                        <input type="search" placeholder=" Search" />
+                    </div>
+                </div>
+            </div>
+            <div class="box box1">
+                <div class="img">
+                    <img src="../IMG/Stark icon.jpeg" alt="Stark icon" />
+                </div>
+                <div class="txt">
+                    <h4>Tony Stark</h4>
+                    <h6>Manager - EUA</h6>
+                </div>
+                <div class="icon">
+                    <i class="bx bx-trending-up"></i>
+                    <span>$3500.00</span>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="img">
+                    <img src="../IMG/Steve Rogers.png" alt="Steve icon" />
+                </div>
+                <div class="txt">
+                    <h4>Steve Rogers</h4>
+                    <h6>Sales Manager - EUA</h6>
+                </div>
+                <div class="icon">
+                    <i class="bx bx-trending-down"></i>
+                    <span>$1000.00</span>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="img">
+                    <img src="../IMG/Peter Parker.jpeg" alt="Peter icon" />
+                </div>
+                <div class="txt">
+                    <h4>Peter Parker</h4>
+                    <h6>Sales Manager - EUA</h6>
+                </div>
+                <div class="icon">
+                    <i class="bx bx-trending-up"></i>
+                    <span>$3500.00</span>
+                </div>
+            </div>
+            <div class="box box4">
+                <canvas id="myChart"></canvas>
+                <script>
+                    const myChart = new Chart(
+                        document.getElementById('myChart'),
+                        config,
+                    )
+                </script>
+            </div>
+            <div class="box box5">
+                <div class="title">
+                    <h4>Top Countries</h4>
+                    <h6>Favorites</h6>
+                </div>
+                <div class="center">
+                    <div class="flag">
+                        <img src="../IMG/GERMANY.png" alt="bandeira Alemanha" />
+                        <img src="../IMG/brasil.jpeg" alt="bandeira Brasil" />
+                        <img src="../IMG/USA.png" alt="bandeira EUA" />
+                        <img src="../IMG/holanda.jpeg" alt="bandeira Holanda" />
+                    </div>
+                    <div class="info">
+                        <div class="names">
+                            <h6>Germany</h6>
+                            <h6>Brazil</h6>
+                            <h6>USA</h6>
+                            <h6>Netherlands</h6>
+                        </div>
+                        <div class="number">
+                            <h6>7.5K</h6>
+                            <h6>8.2K</h6>
+                            <h6>7.1K</h6>
+                            <h6>8.0K</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="view">
+                        <span>View All</span>
+                        <i class="bx bx-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box box6">
+                <div class="title">
+                    <h4>Segmentations</h4>
+                    <h6>All Users</h6>
+                </div>
+                <div class="center">
+                    <div class="list">
+                        <ul>
+                            <li>Not Specified</li>
+                            <li>Male</li>
+                            <li>Female</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <div class="bar4"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <span>Details</span>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+            </div>
+            <div class="box box7">
+                <div class="title">
+                    <h4>Satisfaction Rate</h4>
+                    <h6>From All Pages</h6>
+                </div>
+                <div class="center">
+                    <div class="progress">
+                        <div class="barOverflow">
+                            <div class="bar"></div>
+                        </div>
+                        <span>89.87%</span>
+                        <h6>Based on likes</h6>
+                    </div>
+                </div>
+                <div class="footer">
+                    <span>Details</span>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+            </div>
+            <div class="box box8">
+                <div class="btn1">
+                    <i class="bx bx-plus"></i>
+                </div>
+                <div class="txt">
+                    <h3>No components created yeat</h3>
+                    <h6>Simply create your first component.</h6>
+                    <h6>Just click on the button</h6>
+                </div>
+                <div class="btn2">
+                    <i class="bx bx-plus"></i>
+                    <span>Add component</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tradingview-widget-copyright">
+        <span class="blue-text">Dashboards</span>
+        </a>
+        por Misael e Vitor - 202 &copy
+    </div>
+</body>
+
+</html>
