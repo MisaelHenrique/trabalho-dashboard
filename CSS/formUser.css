@@ -49,7 +49,7 @@ html {
 }
 
 body {
-    margin: 2rem 10rem;
+    margin: 1rem;
     background: var(--bg-color-body);
 }
 
@@ -60,15 +60,15 @@ body {
 }
 
 .content {
-    width: calc(100vw - 15rem - 20rem);
-    height: calc(100vh - 4rem);
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
     border-radius: 0 1rem 1rem 0;
     background: var(--bg-color-content);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 4fr 4fr;
     padding: 2rem;
-    gap: 2rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -79,7 +79,7 @@ body {
     flex-wrap: wrap;
     background: var(--bg-color-menu);
     width: 15rem;
-    height: calc(100vh - 4rem);
+    height: 100%;
     border-radius: 1rem 0 0 1rem;
     padding: 1rem;
     gap: 2rem;
@@ -829,6 +829,8 @@ body {
 }
 
 .container .content form {
+    flex-wrap: wrap;
+    width: 70rem;
     border: 1px solid black;
     display: flex;
 }
@@ -840,14 +842,21 @@ body {
     gap: 1rem;
 }
 
+.container .content form .campo input {
+    width: 30rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
 .container .content form .button {
+    padding: 1rem;
     background: var(--bg-color-button);
     width: 10rem;
     border-radius: 1rem;
     color: var(--text-list2);
     font-weight: 600;
     font-size: 12pt;
-    padding: 3rem;
+    margin: 0 0 3rem 4rem;
 }
 
 
