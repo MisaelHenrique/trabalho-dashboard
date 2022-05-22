@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../JS/chart.js"></script>
-    <title>Document</title>
+    <title>JS Corporation</title>
 </head>
 
 <body>
@@ -74,9 +74,9 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">
-                                <i class="bx bxs-dashboard"></i>
-                                <span>Dashboard</span>
+                            <a href="../HTML/home.html">
+                                <i class="bx bx-home"></i>
+                                <span>Home</span>
                             </a>
                         </li>
 
@@ -106,21 +106,21 @@
                         </li>
 
                         <li>
-                            <a href="">
-                                <i class="bx bx-detail"></i>
+                            <a href="../HTML/formUser.html">
+                                <i class="bx bx-user-circle"></i>
                                 <span>Usuários</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="../HTML/formProdutos/">
                                 <i class="bx bx-error"></i>
                                 <span>Produtos</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="../HTML/formFornecedor.html">
                                 <i class="bx bxs-cog"></i>
                                 <span>Fornecedores</span>
                             </a>
@@ -151,31 +151,46 @@
             </div>
         </div>
         <div class="content">
-            <div class="header">
-                <div class="header-text">
-                    <div class="h3">
-                        <h3>Hello Tony</h3>
-                    </div>
-                    <div class="span">
-                        <span>Premium</span>
-                    </div>
-                </div>
-                <div class="header-input">
-                    <div class="icon-search">
-                        <i class="bx bx-search-alt-2"></i>
-                    </div>
-                    <div class="input">
-                        <input type="search" placeholder=" Search" />
-                    </div>
-                </div>
+            <div class="titulo">
+                <h1>Cadastro de Usuários</h1>
             </div>
-
+            <form action="">
+                <div class="campo">
+                    <div class="name">
+                        <label for="name"><h2>Nome:</h2></label>
+                        <input type="text" placeholder="Digite seu nome" required />
+                    </div>
+                    <div class="sobrenome">
+                        <label for="sobrenome"><h2>Sobrenome:</h2></label>
+                        <input type="text" placeholder="Digite seu sobrenome" required />
+                    </div>
+                </div>
+                <div class="campo">
+                    <div class="email">
+                        <label for="email"><h2>E-mail:</h2></label>
+                        <input type="email" placeholder="ex. email@email.com" required />
+                    </div>
+                    <div class="email">
+                        <label for="email"><h2>Confirmar E-mail:</h2></label>
+                        <input type="email" placeholder="Confirmar E-mail" required />
+                    </div>
+                </div>
+                <div class="campo">
+                    <div class="senha">
+                        <label for="senha"><h2>Senha:</h2></label>
+                        <input type="password" placeholder="Senha de 6-8 caracteres" required />
+                    </div>
+                    <div class="senha">
+                        <label for="senha"><h2>Confirmar a senha:</h2></label>
+                        <input type="password" required />
+                    </div>
+                </div>
+                <input class="button" type="submit" />
+            </form>
         </div>
     </div>
     <div class="tradingview-widget-copyright">
-        <span class="blue-text">Dashboards</span>
-        </a>
-        por Misael e Vitor - 2022 &copy
+        <span class="blue-text">Dashboards</span> por Misael e Vitor - 2022 &copy
     </div>
 </body>
 

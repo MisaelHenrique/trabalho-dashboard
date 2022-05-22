@@ -819,3 +819,32 @@ body {
 
 
 /* FIM BOX 8 */
+
+
+/* INICIO ESTILIZAÇÃO DO FORM USUÁRIO */
+
+.container .content form {
+    border: 1px solid black;
+    display: flex;
+}
+
+.container .content form .campo {
+    border: 1px solid red;
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.container .content form .button {
+    padding: 1rem;
+    background: var(--bg-color-button);
+    width: 10rem;
+    border-radius: 1rem;
+    color: var(--text-list2);
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+
+/* FIM ESTILIZAÇÃO DO FORM USUÁRIO */
