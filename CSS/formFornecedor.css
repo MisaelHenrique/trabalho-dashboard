@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family= Open+Sans & family= Poppins:wght@100;200;300;400;500;600;700 & display=swap");
 :root {
     /* Background color */
     --bg-color-body: #dfe3ec;
@@ -272,7 +273,7 @@ body {
 /* GRID */
 
 
-/* INICIO ESTILIZAÇÃO DO FORM USUÁRIO */
+/* INICIO ESTILIZAÇÃO DO FORM FORNECEDORES */
 
 .content .titulo {
     font-size: 3rem;
@@ -309,4 +310,4 @@ body {
 }
 
 
-/* FIM ESTILIZAÇÃO DO FORM USUÁRIO */
+/* FIM ESTILIZAÇÃO DO FORM FORNECEDORES */

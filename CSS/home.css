@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family= Open+Sans & family= Poppins:wght@100;200;300;400;500;600;700 & display=swap");
 :root {
     /* Background color */
     --bg-color-body: #dfe3ec;
@@ -819,36 +820,3 @@ body {
 
 
 /* FIM BOX 8 */
-
-
-/* INICIO ESTILIZAÇÃO DO FORM USUÁRIO */
-
-.content .titulo {
-    border: 1px solid red;
-    font-size: 3rem;
-}
-
-.container .content form {
-    border: 1px solid black;
-    display: flex;
-}
-
-.container .content form .campo {
-    display: flex;
-    margin: 2rem;
-    padding: 2rem;
-    gap: 1rem;
-}
-
-.container .content form .button {
-    background: var(--bg-color-button);
-    width: 10rem;
-    border-radius: 1rem;
-    color: var(--text-list2);
-    font-weight: 600;
-    font-size: 12pt;
-    padding: 3rem;
-}
-
-
-/* FIM ESTILIZAÇÃO DO FORM USUÁRIO */
